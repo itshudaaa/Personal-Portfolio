@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Houda</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="menuToggle" class="hamburger">☰</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <img src="assets/img/my-image.png" alt="My picture" class="profile-pic" />
+        <div class="about-box">
+          <h2>About Me</h2>
+          <div class="pixel-speech">
+            <h3>function me() { return "<span id='typed-text'></span>"; }</h3>
+          </div>
+          <p>
+            Studying Software Engineering by day, and constantly daydreaming about a life spent consuming devastating literature and film. I live at the intersection of logic and longing, where clean code meets messy emotions. I'm passionate about building thoughtful, user-centered web experiences and love exploring the storytelling power of design and digital spaces.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="skills-box">
+        <h2>Skills</h2>
+        <ul class="my-bullets">
+          <li><img src="assets/img/icon.png" alt="icon" class="bullet-icon"> HTML</li>
+          <li><img src="assets/img/icon.png" alt="icon" class="bullet-icon"> CSS</li>
+          <li><img src="assets/img/icon.png" alt="icon" class="bullet-icon"> JavaScript</li>
+          <li><img src="assets/img/icon.png" alt="icon" class="bullet-icon"> Python</li>
+          <li><img src="assets/img/icon.png" alt="icon" class="bullet-icon"> SQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="project-card">
+        <h3>Inventory Management System</h3>
+        <p>Built with Python and Streamlit, helps manage inventory efficiently.</p>
+        <a href="https://github.com/itshudaaa/CSC1024-Project-2024.git" target="_blank">View on GitHub</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Bite-Wise</h3>
+        <p>A mood-based food suggestion website.</p>
+        <a href="https://github.com/itshudaaa/BiteWise.git" target="_blank">View on GitHub</a>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">SEND</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Houda | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
